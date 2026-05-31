@@ -173,8 +173,7 @@ data/
 - `notebooks/02_feature_engineering_and_clustering_lv.ipynb`
 - `notebooks/03_final_solution.ipynb`
 
-Для получения финального submission достаточно запустить только:
-
+Для воспроизведения финального решения достаточно открыть ноутбук:
 `notebooks/03_final_solution.ipynb`
 
 После выполнения финального ноутбука будет создан файл:
