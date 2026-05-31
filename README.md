@@ -141,31 +141,52 @@ Signal-clustering/
 ---
 
 ## Запуск проекта
-### 1. Подготовить структуру папок
-Создать папку проекта и внутри неё папки:
+
+### 1. Открыть ноутбук
+
+Для воспроизведения финального решения достаточно открыть ноутбук:
+
+```text
+notebooks/03_final_solution.ipynb
+```
+### 2. Подготовить данные в среде запуска
+
+Исходный файл данных Run200_Wave_0_1.txt не хранится в репозитории из-за большого размера.
+Перед запуском ноутбука необходимо в рабочей среде создать папку:
 ```text
 data/
-notebooks/
 ```
-### 2. Положить данные
-Скопировать файл:
+и загрузить в неё файл:
 `Run200_Wave_0_1.txt`
-в папку:
-```text
-data/
-```
-Ожидаемый путь:
-```text
-data/Run200_Wave_0_1.txt
-```
+Ожидаемый путь к файлу:
+`data/Run200_Wave_0_1.txt`
+В Google Colab это можно сделать через левую панель Files:
+- нажать на значок папки;
+- создать папку data;
+- загрузить файл Run200_Wave_0_1.txt внутрь этой папки;
+- после этого запускать ячейки ноутбука.
 
 ### 3. Запустить ноутбуки
 
-Рекомендуемый порядок запуска:
-- notebooks/01_eda_signal_analysis.ipynb
-- notebooks/02_feature_engineering_and_clustering_lv.ipynb
-- notebooks/03_final_solution.ipynb
+Рекомендуемый порядок для просмотра всей работы:
+- `notebooks/01_eda_signal_analysis.ipynb`
+- `notebooks/02_feature_engineering_and_clustering_lv.ipynb`
+- `notebooks/03_final_solution.ipynb`
 
-Для получения финального submission достаточно запустить:
+Для получения финального submission достаточно запустить только:
 
 `notebooks/03_final_solution.ipynb`
+
+После выполнения финального ноутбука будет создан файл:
+
+`submission_tail_pca_19_inverted_signal_pca_09_kmeans_n500.csv`
+
+---
+
+## Зависимости
+Проект можно запускать в Google Colab без отдельной установки зависимостей.
+Используемые библиотеки:
+- numpy
+- pandas
+- matplotlib
+- scikit-learn
